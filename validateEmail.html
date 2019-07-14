@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validate email</title>
+</head>
+<body>
+<script>
+
+    function validateEmail(str) {
+        let reExPa = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        return reExPa.test(str);
+    }
+
+    let str1 = "ab@gmail.com";
+    let str2 = "ab@gmail.";
+
+    console.log(validateEmail(str1));
+    console.log(validateEmail(str2));
+
+</script>
+</body>
+</html>
